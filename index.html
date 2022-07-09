@@ -1,0 +1,848 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القادة</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link id="mystylesheet" rel="stylesheet" type="text/css" href="dark.css">
+  <link id="mystylesheet" rel="stylesheet" type="text/css" href="light.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+.glyphicon {
+       font-size: 40px;
+       color:rgb(165, 55, 55);
+     }
+*,button{
+ 
+    font-family:Tajawal;
+}
+.bg {
+    text-align: center;
+    height: 300px;
+    position: relative;
+    background:none;
+    padding: 80px;
+}
+.bg:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(https://images.pexels.com/photos/4869123/pexels-photo-4869123.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity : 0.7;
+    z-index: -1;
+  
+}
+
+a{
+    font-size: 15px;
+}
+ 
+.glyphicon {
+       font-size: 50px;
+       color:#77789F;
+       
+     }
+*{
+    font-family:Tajawal;
+    
+}
+.team img  {
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.social{
+  margin-top: -20px;
+}
+.fa{
+  font-size: 15px;
+  color: white;
+  padding: 6px;
+  width: 35px;
+  height:35px ;
+  background-color: #57517A;
+  text-decoration: none;
+  border-radius: 50%;}
+  
+
+  
+
+  .about-section-bg{
+  background-color: #f8e1e3;
+  
+  
+
+}
+.about-section{
+        background-size: 100%;
+        padding: 40px 40px;
+    }
+.aboutimg{
+  max-height:350px ;
+ 
+}
+.inner-container{
+    width: 500px;
+    height: auto;
+    
+  
+    padding: 20px 20px;
+  
+  
+}
+
+.inner-container h1{
+    margin-bottom: 25px;
+
+}
+.text{
+    font-size: 16px;
+    font-family: Tajawal;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 40px;
+    }
+}
+.social a{
+    margin: 8px;
+}
+.fa{
+    font-size: 20px;
+
+}
+.btn-light{
+  background-color: #C26B9E;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+}
+.btn-info ::after{
+  background-color: #C26B9E;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+
+
+
+.portfolio .portfolio-item {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  max-width: 350px;
+  height: 300px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.page-section-heading{
+    color: cornsilk;
+    font-weight: 800;
+    padding-bottom: 30px ;
+}
+.img-fluid{
+    min-width: 350px;
+  height: 300px;
+  object-fit: cover;
+}
+.portfolio .portfolio-item .portfolio-item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  background-color: #C26B9E;
+}
+.portfolio .portfolio-item .portfolio-item-caption:hover {
+  opacity: 0.8;
+}
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+  font-size: 1.5rem;
+}
+
+.portfolio-modal .btn-close {
+  color: #1abc9c;
+  font-size: 2rem;
+  padding: 1rem;
+}
+.portfolio-modal .portfolio-modal-title {
+  font-size: 2.25rem;
+  line-height: 2rem;
+}
+@media (min-width: 992px) {
+  .portfolio-modal .portfolio-modal-title {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+
+
+.darkfooter{
+    padding:30px 0;
+    color:#f0f9ff;
+    background-color: #3f3a5a;
+}
+
+.darkfooter h1,h2,h3{
+    font-weight: bold;
+    margin-bottom: 12px;
+
+}
+
+.darkfooter ul {
+  text-decoration: none;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 15px;
+
+}
+
+
+.darkfooter ul a{
+    color: mintcream;
+    opacity:0.6;
+    font-size: 15px;text-decoration: none;
+
+}
+.darkfooter p{
+    color: mintcream;
+    opacity:0.6;
+    font-size: 13px;
+    
+
+}
+
+.darkfooter ul a:hover {
+  opacity:0.9;
+}
+.copyright{
+    margin-top: 20px;
+    opacity:0.6;
+    
+}
+.social {
+    margin-top: 15px;
+}
+ .social  a{
+    margin: 5px;
+}
+
+.fa:hover{
+    color: mintcream;
+    opacity:0.6;text-decoration: none;
+
+}
+
+@media (max-width:767px) {
+  .darkfooter  {
+    text-align:center;
+    padding-bottom:20px;
+  }}
+.colorsection{
+  display: block;
+}
+.colorpallate{
+  height: 100px;
+  width: 120px;
+}
+@media (max-width:1000px){
+  .colorsection{
+    margin-bottom: 40px;
+    margin-left:auto;
+}
+  .colorpallate{
+  height: 80px;
+  max-width: 80%;
+  width:700px;
+  margin: 20px;
+}
+}
+@media (max-width:767px){
+  .aboutimg{
+      max-width:80%;
+    }}
+@media (max-width:767px){
+  .colorsection{
+    margin-bottom: 40px;
+}
+  .colorpallate{
+  height: 80px;
+  width:450px;
+  max-width: 80%;
+  margin: 20px;
+}
+}
+#pricetable{
+  background-color: #f8e1e3;
+  
+}
+
+ .pricecontent{
+  background-color: white;
+
+}
+ .headprice{
+  background-color: #ebdff1;
+}
+.headprice:hover{
+  background-color: #c6c1dd;
+}
+
+
+ .head span{
+  color: #C26B9E;
+ 
+  font-size: 17px;
+  font-weight: 500;
+} 
+.featurelist ul{
+  width: 100%;
+}
+ .featurelist ul li{
+  color: #a7a7a7;
+
+}
+.featurelist ul li span{
+  color: #414141;
+}
+.featurelist ul  :hover{
+  background-color: #b9badf;
+  border-left:  1px solid #313133;
+}
+
+
+#pricetable{
+  margin: 50px 0 50px 0;}
+  #pricetable .pricecontent{
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}  
+.price{
+  color: #414141;
+  width: 100%;
+  font-size: 30px;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  padding: 30px 0 10px;
+}
+.featurelist{
+  list-style: none;
+  text-align: center;
+  color: rgb(138, 138, 138);
+  font-size: 15px;
+  font-weight: 400;
+}
+.featurelist li{
+  margin: 0 35px;
+  padding: 20px 15px;
+  width: 100%;
+  
+}
+.pricecontent{
+  margin: 20px;
+  max-width: 95%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+#btnprice
+{
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+body {
+ 
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+    </style>
+
+
+<script>
+
+var setTheme = localStorage.getItem('theme')
+		console.log('theme:', setTheme)
+
+		if (setTheme == null){
+			swapStyle('light.css')
+      
+		}else{
+			swapStyle(setTheme)
+		}
+
+		function swapStyle(sheet){
+			document.getElementById('mystylesheet').href = sheet
+			localStorage.setItem('theme', sheet)
+		}
+
+
+</script>
+
+<nav  class="navbar navbar-expand-sm navbar-dark shadow " style="background-color: #57517A; padding-right: 30px;padding-left: 30px;">
+    <a class="navbar-brand" href="#">
+        <img class src="https://logodix.com/logo/1931272.png"  alt="Bootstrap" width="30" height="30" style="margin-top: 10px;" d-inline-block align-top">
+
+    </a>
+    
+    <button  class="navbar-toggler" 
+    type="button" 
+    data-bs-toggle="collapse" 
+    data-bs-target="#toggleMobileMenu" 
+    aria-controls="toggleMobileMenu" 
+    aria-expanded="false" 
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    
+          
+       
+    <div class="collapse navbar-collapse" id="toggleMobileMenu">
+    <ul class ="navbar-nav ms-auto text-right">
+    <li>
+        <a class="nav-link" href="#home">الرئيسية</a>
+    </li>
+    <li>
+        <a class="nav-link" href="#about">من نحن</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#team">فريق العمل</a>
+  </li>
+     <li>
+       <a class="nav-link" href="#portfoilo">معرض الاعمال</a>
+    </li>
+    
+    <li >
+      <a style="height: 35px;margin-top: 10px;" class="btn btn-light " href="login.html">تسجيل الدخول</a>
+   </li>
+   
+    </ul>
+    
+    </div><div class="row " >
+      
+    
+    <a  onclick="swapStyle('dark.css')" style="color: rgb(36, 41, 46);font-size: 20px;"class="
+      fa fa-moon-o "></a>
+     
+    <a onclick="swapStyle('light.css')" style="color: ;font-size: 20px;"class="
+      fa fa-sun-o "></a>
+
+ 
+      </div> </div>
+      
+    </nav>
+
+
+    <div id="home" class="bg pt-6" style="margin-top: -20px;">
+           <h1 style="font-size:30px;font-weight: 800;" >!اهلا بك </h1>
+          <p style="font-size:20px;font-weight: 400;">هنا كتابة الفقرات الخاصة بالموقع.</p>
+          
+            <a class="btn btn-light " href="#portfoilo" role="button">معرض الاعمال</a>
+          </div>
+
+
+
+
+
+
+
+ 
+
+
+
+<div class="container ">
+  <section class="text-center my-5">
+      <h1 class=" font-weight-bold my-5">ماذا توفر خدماتنا</h2>
+      <p class="lead grey-text w-responsive  mb-5">مميزاتمميزات عامة مميزات عامة مميزات عامةمميزات عامة </p>
+      <div class="row">
+        <div class="col-md-4">
+          <i class="glyphicon glyphicon-flash"></i>
+          <h2 class="font-weight-bold my-4">سرعة بالتنفيذ</h2>
+          <p style="font-size:13px"  class="grey-text mb-3">شرح الخدمة
+          </p>
+        </div>
+        <div class="col-md-4">
+          <i class="glyphicon glyphicon-headphones"></i>
+          <h2 class="font-weight-bold my-4">خدمة العملاء</h2>
+          <p style="font-size:13px"  class="grey-text mb-3">شرح الخدمة
+          </p>
+        </div>
+        <div class="col-md-4">
+          <i class="glyphicon glyphicon-user"></i>
+          <h2 class="font-weight-bold my-4">دعم</h2>
+          <p style="font-size:13px"  class="grey-text mb-3">شرح الخدمة.
+          </p>
+        </div>
+      </div>
+    </section></div>
+  
+  
+
+    <div id="about" class="about-section-bg ">
+    <div class="about-section container-lg text-center" >
+      <div class="row">
+        <div class="col-md-6">
+      <img class="aboutimg" src="about.jpg">
+    </div>
+    <div class="col-md-6">
+      <div class="inner-container text-center">
+         <h1 class=" font-weight-bold my-5">من نحن</h1>
+          <h3>تعرف على الشركة</h3>
+          <p class="text text-center">
+              وراء كل علامة تجارية قصة مثيرة للاهتمام، يُحبّ الآخرون سماعها وخاصة العملاء، استخدام الفن القصصي في كتابة صفحة “من نحن” هملايين الدولارات سنويا لاختلاق قصص إعلانية تلهم المستهلكين
+          </p>
+          <a style="font-size: 16px;" class="btn btn-light " href="#" role="button">معرض الاعمال</a>
+          <div class="social my-4">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-linkedin"></a>
+             
+      </div>
+    </div>
+  </div>
+  </div></div></div>
+  
+
+    <div id="team" class="container">
+  <section class="text-center my-5">
+    <h1 class=" font-weight-bold my-5">تعرف على فريق العمل</h1>
+      <p class=" container-sm lead grey-text w-responsive  mb-5"></p>
+      <div class="row">
+        <div class="col-md-4 team" color>
+          <img class="team" src="photo1.jpg">
+          <h3 class="font-weight-bold my-4">احمد </h3>
+          <p style="font-size:13px"  class="grey-text mb-3">بياع خضرة
+            
+          </p>
+          <div class="social my-4">
+            <a href="https://www.facebook.com/ahmed.younis.7370" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+  
+          </div>
+        </div>
+        <div class="col-md-4 team">
+          <img class="team" src="photo.jpg">
+          <h3 class="font-weight-bold my-4">محمد</h3>
+          <p style="font-size:13px"  class="grey-text mb-3">المؤسس
+          </p>
+          <div class="social my-4">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+  
+          </div>
+        </div>
+        <div class="col-md-4 team">
+          <img class="team" src="photo2.jpg">
+          <h3 class="font-weight-bold my-4">ابو نمر</h3>
+          <p style="font-size:13px" class="grey-text mb-3">صياد النمور
+          </p>
+          <div class="social my-4">
+            <a href="https://www.facebook.com/profile.php?id=100047909670623" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+  
+          </div>
+        </div>
+      </div></div>
+    </section></div>
+
+
+
+
+
+
+    <section id="portfoilo" style=" margin-bottom: 25px;" style="background-color: #d6d6e2 ;"  class="page-section portfolio" id="portfolio">
+      <div class="container">
+          <!-- Portfolio Section Heading-->
+          <h1 style="margin-top: 25px; margin-bottom: 25px;"  class=" font-weight-bold my-5 text-center">معرض الاعمال</h2>
+          <!-- Icon Divider-->
+        
+          <!-- Portfolio Grid Items-->
+          <div class="row justify-content-center">
+              <!-- Portfolio Item 1-->
+              <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="portfolio-item mx-auto" data-bs-toggle="modal" >
+                      <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                          <div class="portfolio-item-caption-content text-center text-white"><i class="fa fa-plus"></i>
+                          <h3 >عنوان الصورة</h3>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="https://images.pexels.com/photos/9718307/pexels-photo-9718307.jpeg" alt="..." />
+                  </div>
+              </div>
+              <!-- Portfolio Item 2-->
+              <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="portfolio-item mx-auto" >
+                      <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                          <div class="portfolio-item-caption-content text-center text-white"><i class="fa fa-plus"></i>
+                              <h3>عنوان الصورة</h3></div>
+                      </div>
+                      <img class="img-fluid" src="https://images.pexels.com/photos/9297958/pexels-photo-9297958.jpeg" alt="..." />
+                  </div>
+              </div>
+              <!-- Portfolio Item 3-->
+              <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="portfolio-item mx-auto" >
+                      <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                          <div class="portfolio-item-caption-content text-center text-white"><i class="fa fa-plus"></i>
+                              <h3>عنوان الصورة</h3></div>
+                      </div>
+                      <img class="img-fluid" src="https://images.pexels.com/photos/4115535/pexels-photo-4115535.jpeg?" alt="..." />
+                  </div>
+              </div>
+              <!-- Portfolio Item 4-->
+              <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                  <div class="portfolio-item mx-auto" >
+                      <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                          <div class="portfolio-item-caption-content text-center text-white"><i class="fa fa-plus"></i>
+                              <h3>عنوان الصورة</h3></div>
+                      </div>
+                      <img class="img-fluid" src="https://images.pexels.com/photos/7840137/pexels-photo-7840137.jpeg?" alt="..." />
+                  </div>
+              </div>
+              <!-- Portfolio Item 5-->
+              <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                  <div class="portfolio-item mx-auto" >
+                      <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                          <div class="portfolio-item-caption-content text-center text-white"><i class="fa fa-plus"></i>
+                              <h3>عنوان الصورة</h3></div>
+                      </div>
+                      <img class="img-fluid" src="https://images.pexels.com/photos/7148953/pexels-photo-7148953.jpeg" alt="..." />
+                  </div>
+              </div>
+              <!-- Portfolio Item 6-->
+              <div class="col-md-6 col-lg-4 mb-5 ">
+                  <div class="portfolio-item mx-auto" >
+                      <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                          <div class="portfolio-item-caption-content text-center text-white"><i class="fa fa-plus"></i>
+                              <h3>عنوان الصورة</h3></div>
+                      </div>
+                      <img class="img-fluid" src="https://images.pexels.com/photos/4869123/pexels-photo-4869123.jpeg" alt="..." />
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+
+
+
+<div id="pricetable">
+  <div class="container">
+    <h1 class="text-center" style="margin-top:20px;">قائمة الاسعار</h1>
+    <div class="row">
+      <div class="col-md-4 pricecard">
+        <div class="pricecontent clearfix">
+          <div class="headprice clearfix">
+            <div class="headcontent clearfix">
+              <div class="headbg"></div>
+              <div class="head">
+                <span>الاساسي</span>
+              </div>
+            </div>
+            <div class="pricetag clearfix text-center">
+              <span class="price">
+                <span class="sign">$</span>
+                <span class="currency">45</span>
+                <span class="cent">.99</span>
+                <span class="month">/للشهر</span>
+              </span>
+            </div>
+          </div>
+          <div class="featurelist text-center">
+            <ul >
+              <li><span>2GB</span>النطاق</li>
+              <li><span>20GB</span>المساحة</li>
+              <li><span>2</span>حسابات</li>
+              <li><span>7</span>دومين</li>
+              <li><span>24/7</span>دعم</li>
+            </ul>
+          </div>
+            <a class="btn btn-light clearfix" href="login.html" id="btnprice">سجل دخول</a>
+         
+        </div>
+      </div>
+      <div class="col-md-4 ">
+        <div class="pricecontent clearfix">
+          <div class="headprice clearfix">
+            <div class="headcontent clearfix">
+              <div class="headbg"></div>
+              <div class="head">
+                <span>المتوسط</span>
+              </div>
+            </div>
+            <div class="pricetag clearfix">
+              <span class="price">
+                <span class="sign">$</span>
+                <span class="currency">75</span>
+                <span class="cent">.99</span>
+                <span class="month">/للشهر</span>
+              </span>
+            </div>
+          </div>
+          <div class="featurelist">
+            <ul>
+              <li><span>4GB</span>النطاق</li>
+              <li><span>20GB</span>المساحة</li>
+              <li><span>5</span>حسابات</li>
+              <li><span>13</span>دومين</li>
+              <li><span>24/7</span>دعم</li>
+            </ul>
+          </div>
+          <a class="btn btn-light clearfix" href="login.html" id="btnprice">سجل دخول</a>
+        </div>
+      </div>
+      <div class="col-md-4 pricecard">
+        <div class="pricecontent clearfix">
+          <div class="headprice clearfix">
+            <div class="headcontent clearfix">
+              <div class="headbg"></div>
+              <div class="head">
+                <span>الاحترافي</span>
+              </div>
+            </div>
+            <div class="pricetag clearfix">
+              <span class="price">
+                <span class="sign">$</span>
+                <span class="currency">99</span>
+                <span class="cent">.99</span>
+                <span class="month">/للشهر</span>
+              </span>
+            </div>
+          </div>
+          <div class="featurelist">
+            <ul>
+              <li><span>10GB</span>النطاق</li>
+              <li><span>60GB</span>المساحة</li>
+              <li><span>9</span>حسابات</li>
+              <li><span>17</span>دومين</li>
+              <li><span>24/7</span>دعم</li>
+            </ul>
+          </div>
+          <a class="btn btn-light clearfix" href="login.html" id="btnprice">سجل دخول</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="darkfooter">
+    <footer>
+        <div class="container text-right"  style="padding: 30px;">
+            <div class="row">
+                <div class="col-md-3 ">
+                    <h3>خدماتنا</h3>
+                    <ul>
+                        <li><a href="#">تصميم</a></li>
+                        <li><a href="#">برمجة</a></li>
+                        <li><a href="#">طباعة</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 ">
+                 <h3>من نحن</h3>
+                 <ul>
+                     <li><a href="#">الشركة</a></li>
+                     <li><a href="#">الفريق</a></li>
+                     <li><a href="#">وضائف</a></li>
+                 </ul>
+             </div>
+             <div class="col-md-6 ">
+                 <h3 style="text-align:right;">خدماتنا</h3>
+              <p style="text-align:right;"> وراء كل علامةوراء كل علامة تجارية قصة مثيرة للاهتمام، يُحبّ الآخرون سماعها وخاصة العملاء، استخدام الفن القصصي في كتابة صفحة تجارية قصة مثيرة للاهتمام، يُحبّ الآخرون سماعها وخاصة العملاء، استخدام الفن القصصي في كتابة صفحة ن</p>
+               
+             
+             </div>
+            </div>
+            <div class="col social text-center">
+             <a href="#" class="fa fa-facebook"></a>
+             <a href="#" class="fa fa-twitter"></a>
+             <a href="#" class="fa fa-instagram"></a>
+             <a href="#" class="fa fa-linkedin"></a>
+         <p class="copyright text-center "> جميع الحقوق المحفوظة © 2022</p>
+             <p class="pull-left"><a style="color:white;" href="#">رجوع الى الاعلى</a></p>
+         
+             
+            </div>
+             </div>
+      
+ 
+ 
+ 
+    </footer>
+ </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+  
+  
+
+</body>
+</html>
